@@ -357,6 +357,13 @@
 		.des-ul li{
 			margin-bottom: 8px;
 		}
+		
+		.page-five-des{
+			font-size:18px;
+		}
+		.page-five-des li{
+			margin-top:12px !important;
+		}
 		/*
 			Page Six
 		*/

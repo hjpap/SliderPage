@@ -63,9 +63,11 @@
 				prePage.css('z-index' ,1);
 				prePage.show().addClass(preCls).one(AnimationEnd, function(){
 					prePage.css('z-index' ,1);
-					prePage.unbind();
-					prePage.removeClass(preCls);
-					prePage.hide();
+					prePage[0].removeEventListener(START_EVENT,that.startEvent,false);
+					setTimeout(function(){
+						prePage.removeClass(preCls);
+						prePage.hide();
+					},250);
 				});
 			}
 			current = index;
