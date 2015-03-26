@@ -487,3 +487,33 @@
 			font-size: 16px;
 			padding:0 20px;
 		}
+		@media (max-width:450px) {
+			.page-five-des{
+				padding: 20px 20px 0 !important;
+				font-size: 15px !important;
+			}
+			.page-three-text{
+				padding: 20px 20px 0 !important;
+			}
+			.page-three-bg p {
+			   line-height: 20px !important;
+			}
+			.page-seven-head {
+			  height: 180px !important;
+			}
+			.page-seven-img {
+			  height: 180px !important;
+			}
+			.page-seven-text {
+			  height: 140px !important; 
+			}
+			.page-eight-ul {
+			  margin: 0!important;
+			  padding: 0;
+			  list-style: none;
+			  font-size: 12px !important;
+			}
+			.page-eight-ul li {
+			  margin-bottom: 0px !important;
+			}
+		}
