@@ -59,7 +59,7 @@
 		.silder-jt{
 			position:fixed;
 			bottom:35px;
-			left:calc(50% - 15px);
+			left:50%;
 			width:30px;
 			height:30px;
 			color:#fff;
@@ -458,17 +458,17 @@
 		
 		.page-nine-g{
 			position:absolute;
-			left:calc(50% - 60px);
+			left:38%;
 			bottom:60%;
 		}
 		.page-nine-z{
 			position:absolute;
-			left:calc(50% - 50px);
+			left:40%;
 			bottom:40%;
 		}
 		.page-nine-q{
 			position:absolute;
-			left:calc(50% - 50px);
+			left:40%;
 			bottom:20%;
 		}
 		.page-nine-t{

@@ -25,7 +25,7 @@
 		</li>
 		<li id="p_3" top-in="slideInDown" bottom-in="slideInUp" top-out="zoomOutBottom" bottom-out="zoomOutTop" class="page" style="display:none;">
 			<div class="page-three-bg">
-				<div class="animate-dom page-three-text" in="fadeInUpSmall" delay="700">
+				<div class="animate-dom page-three-text" in="fadeInUpSmall" delay="300">
 					<p>关于径点</p>
 					<p>&nbsp; </p>
 					<p>径点科技有限公司(AvePoint, Inc.)成立于2001年。公司总部位于美国新泽西州泽西市，并在美国、英国、法国、德国、日本和中国等地均设有分公司。公司作为行业领导者，为下一代社交协作平台提供了企业级的大数据管理、数据管控与合规性软件解决方案。</p>
@@ -41,7 +41,7 @@
 		</li>
 		<li id="p_5" top-in="slideInDown" bottom-in="slideInUp" top-out="zoomOutBottom" bottom-out="zoomOutTop" class="page" style="display:none;">
 			<div class="page-three-bg">
-				<div class="animate-dom page-three-text" in="fadeInUpSmall" delay="700">
+				<div class="animate-dom page-three-text" in="fadeInUpSmall" delay="300">
 					<ul class="des-ul">
 						<li>大量海外培训/工作的机会；</li>
 						<li>完善的技术培训体系；</li>
@@ -88,7 +88,7 @@
 		</li>
 		<li id="p_8" top-in="slideInDown" bottom-in="slideInUp" top-out="zoomOutBottom" bottom-out="zoomOutTop" class="page" style="display:none;">
 			<div class="page-three-bg">
-				<div class="animate-dom page-three-text" in="fadeInUpSmall" delay="700">
+				<div class="animate-dom page-three-text" in="fadeInUpSmall" delay="300">
 					<div>目前招聘中的岗位</div>
 					<ul class="des-ul page-eight-ul">
 						<li>1.	软件开发工程师/ Software Developer</li>
@@ -107,13 +107,13 @@
 			</div>
 		</li>
 		<li id="p_9" top-in="slideInDown" bottom-in="slideInUp" top-out="zoomOutBottom" bottom-out="zoomOutTop" class="page" style="display:none;">
-			<a class="cir-btn-big page-nine-g" href="http://www.avepoint.com.cn"><div>官网</div></a>
-			<a class="cir-btn  page-nine-z" href="http://company.zhaopin.com/CC595879123.htm"><div>智联招聘</div></a>
-			<a class="cir-btn  page-nine-q" href="http://companyadc.51job.com/companyads/2015/sh/jingdian0128_8887wh/index.htm"><div>前程无忧</div></a>
+			<a id="link1" class="cir-btn-big page-nine-g" href="http://www.avepoint.com.cn"><div>官网</div></a>
+			<a id="link2" class="cir-btn  page-nine-z" href="http://company.zhaopin.com/CC595879123.htm"><div>智联招聘</div></a>
+			<a id="link3" class="cir-btn  page-nine-q" href="http://companyadc.51job.com/companyads/2015/sh/jingdian0128_8887wh/index.htm"><div>前程无忧</div></a>
 			<div class="page-nine-t">直接投递简历：HR_Shanghai@avepoint.com</div>
 		</li>
 	</ul>
-	<div class="silder-jt">
+	<div id="silder-jt" class="silder-jt">
 		<i class="iconfont jt1 fadeInOutUpInfinite">&#xf0004;</i>
 		<i class="iconfont jt2 fadeInOutUpInfinite">&#xf0004;</i>
 	</div>
@@ -126,6 +126,18 @@
 
 $(function(){
 	document.addEventListener("touchmove",function(e){e.preventDefault();},false);
+	var halfw = $('body').width()/2;
+	var jt = $('#silder-jt');
+	var jtl = halfw - (jt.width()/2);
+	jt.css('left',jtl);
+	
+	var link1 = $('#link1');
+	var link2 = $('#link2');
+	var link3 = $('#link3');
+	link1.css('left',halfw-link1.width()/2);
+	link2.css('left',halfw-link2.width()/2);
+	link3.css('left',halfw-link3.width()/2);
+	
 	var sliderPage = new SliderPage();
 
 	$('#music-box').one(sliderPage.event.START_EVENT,function(){
